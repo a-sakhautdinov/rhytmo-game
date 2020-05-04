@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Voltaire');
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+
+}
+
+blockquote, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, th, ul {
+  margin: 0;
+  padding: 0;
+}
+
+#overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  border: 2px solid #e60000;
+}
+
+#resultDiv{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  font-family:'Voltaire', sans-serif;
+  font-size: 24px;
+  color: #e60000;
+}
+
+#container{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+.item{
+  width: 4px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+.button {
+  font-family:'Voltaire', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  padding: 4px 0 2px 0;
+  color: #e60000;
+  background-color: black;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: black;
+  background-color: #e60000;
+}
+
+#scoreWrapper{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+#scoreDiv{
+  font-family:'Voltaire', sans-serif;
+  color:#e60000;
+  font-size: 2em;
+}
+
+#streakDiv{
+  font-family:'Voltaire', sans-serif;
+  color:#e60000;
+  font-size: 2em;
+  padding-left: 5px;
+}
+
+#missDiv{
+  display: none;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  font-family:'Voltaire', sans-serif;
+  color:#e60000;
+  font-size: 2em;
+}
+
+#ability{
+  display: none;
+  font-family:'Voltaire', sans-serif;
+  font-size: 24px;
+  color:#000000;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 300px;
+  border: 2px solid #e60000;
+}
+
+#abilityFill{
+  width: 100%;
+  height: 30px;
+  background-color: #e60000;
+  display: flex;
+  justify-content: center;
+}
+
+#abilityText{
+  color:#000000;
+}
+
+.header{
+  font-size: 2em;
+  text-align: center;
+}
+
+#information{
+  font-family:'Voltaire', sans-serif;
+  font-size: 18px;
+  color:#e60000;
+  padding: 8px;
+}
+
+#informationHeader{
+  font-family:'Voltaire', sans-serif;
+  font-size: 24px;
+  color:#e60000;
+  text-align: center;
+  margin-top: 2px;
+  border-top: 2px solid #e60000;
+}
+
+#gameName{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  font-family:'Voltaire', sans-serif;
+  font-size: 36px;
+  color:#e60000;
+  transform: translate(-50%, 0);
+}
+
+#songName{
+  position: absolute;
+  top: calc(25% + 40px);
+  left: 50%;
+  font-family:'Voltaire', sans-serif;
+  font-size: 36px;
+  color:#e60000;
+  transform: translate(-50%, 0);
+  white-space: nowrap;
+  max-width: 400px;
+  transition: top 0.5s ease-out 0.5s, left 0.5s ease-out 0.5s;
+}

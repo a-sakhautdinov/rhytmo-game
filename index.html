@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Rhytmo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+<body>
+  <div id="container"></div>
+  <div id="gameName">Rhytmo</div>
+  <div id="songName">Current song: Long - Lost eternity</div>
+  <div id="overlay">
+    <div class="button" id="startButton">Click To Play</div>
+    <div class="button" id="loadAudio">Load Your Song</div>
+    <div class="button" id="missButton">Lose On Misses: Off</div>
+    <div id="information">
+      <div id="informationHeader">Information</div>
+      Rhytm base game. <br/>
+      Put your spaceship to one of 4 lines. Use "Z", "X", "C", "V" for this. <br/>
+      Use "Space" for spread for all lines for 0.5s. Cooldown 5s. <br/>
+      Press "Esc" to end current song.
+    </div>
+  </div>
+  <input type="file" id="inputAudio" accept=".mp3">
+  <div id="scoreWrapper">
+    <div id="scoreDiv"></div>
+    <div id="streakDiv"></div>
+  </div>
+  <div id="missDiv">Miss: </div>
+  <div id="resultDiv"></div>
+  <div class="button" id="closeButton">Go to menu</div>
+  <div id="ability"><div id="abilityFill"><div id="abilityText">Space</div></div></div>
+  <script src="js/three.js"></script>
+  <script src="js/lodash.js"></script>
+  <script src="js/helpers.js"></script>
+  <script src="js/createObjects.js"></script>
+  <script src="js/index.js"></script>
+  </body>
+</html>
